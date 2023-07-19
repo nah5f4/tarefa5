@@ -13,7 +13,7 @@ const fabrica = {
       let new_node = document.createElement("li");
       let lata_vazia = {
         marca: "dev.Foods()",
-        opcao: undefined,
+        opcao: opcoes,
         elemento: container.appendChild(new_node)
       };
       lata_vazia.elemento.innerHTML = `Lata ${i} <span> Opcao </span>`;
