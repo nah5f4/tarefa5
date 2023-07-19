@@ -13,7 +13,7 @@ const fabrica = {
       let new_node = document.createElement("li");
       let lata_vazia = {
         marca: "dev.Foods()",
-        opcao: opcoes,
+        opcao: undefined,
         elemento: container.appendChild(new_node)
       };
       lata_vazia.elemento.innerHTML = `Lata ${i} <span> Opcao </span>`;
@@ -53,6 +53,12 @@ function coloca_latas_na_tela() {
 
     // remove todas as classes do elemento
     lata.elemento.className = "";
+    
+    // Alterar o conteúdo do span para o nome da opção
+    comidaSpan.innerText = lata.opcao;
+
+    // Adicionar a classe correspondente à opção à lata
+    lata.elemento.classList.add(lata.opcao);
 
     /* Adicionar codigos aqui para mudar o conteudo
       * do span de acordo com o nome.
