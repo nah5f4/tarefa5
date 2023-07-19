@@ -54,18 +54,11 @@ function coloca_latas_na_tela() {
     // remove todas as classes do elemento
     lata.elemento.className = "";
     
-    // Alterar o conteúdo do span para o nome da opção
     comidaSpan.innerText = lata.opcao;
 
-    // Adicionar a classe correspondente à opção à lata
     lata.elemento.classList.add(lata.opcao);
 
-    /* Adicionar codigos aqui para mudar o conteudo
-      * do span de acordo com o nome.
-      * mudar tambem a classe do LI dentro do UL
-      * para que apareça o background corretamente de
-      * acordo com a opcao
-      * */
+
 
   }
 }
