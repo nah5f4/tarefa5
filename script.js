@@ -4,7 +4,7 @@ const container = document.querySelector("ul");
 
 const fabrica = {
 
-  opcoes: ["feijao","milho","ervilha","sardinhas","pessego"],
+  opcoes: ["feijao","milho","ervilha","sardinhas","pessego","sopa","tomate"],
 
   quantidade_de_latas: 10,
 
